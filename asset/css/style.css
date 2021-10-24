@@ -1,0 +1,559 @@
+/* mise en place de la police d'écriture demandé dans la maquette*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+/*////////////////// mise en place du bouton qui permet de scroll vers le top //////////*/
+.scrollToTopBtn {
+    background-color: rgba(0, 0, 0, 0.295);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 150px;
+    right: 5px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* ajouter la transisition */
+    transition: all .5s ease
+  } 
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
+/* mise en place de la marge sur tout le coprs du site sauf sauf le footer ///////////////////////*/
+#body {
+    margin: 25px;
+    background: rgb(255, 255, 255);
+}
+/* début de la mise en forme du logo et de son positionnement ainsi que de sa taille /////////////////*/
+#imagelogo {
+    background: url(../img/Booki@3x.png) no-repeat ;
+    width: 115px;
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+/*////////////////////// modification de la barre de recherche ////////////*/
+#searchbar {
+    display: flex;
+}
+#recherche, input, #searchbar span {
+    padding: 13px;
+}
+button {
+    background: #0065FC ;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+#iconsearchbar {
+    background: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid rgba(141, 139, 139, 0.459);
+    border: transparent;
+    border-right: none;
+}
+#iconsearchbar i {
+    position: relative;
+    top: 2px;
+    left: 3px;
+    padding-right: 5px;
+}
+input {
+    border: 1px solid rgba(141, 139, 139, 0.178);
+    outline-color:#0065FC  ;
+    border-left: none;
+    font-weight: 900;
+}
+::placeholder {
+    color: black;
+}
+/* agencement du header avec les élements de la nav côté droit du haut de la page juste en face du logo */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+/*///// debut modification de la nav bar contenant les 2 a avec les ID relié à ceux-ci ///////////////*/
+#navigation {
+    overflow: hidden;
+    margin-top: -25px;
+  }
+  #navigation a {
+    float: left;
+    margin-right: 50px;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 40px 16px ;
+
+  }
+  #navigation a:hover {
+    border-top: 3px solid #0065FC ;
+    color: #0065FC;
+  }
+/* début du dropdown contenant les différents choix des filtres */
+#container1{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+/* modification de la couleur des icons en bleu */
+#container1 i {
+    color: #0065FC;
+}
+.mooveicon {
+    border-radius: 50px;
+    z-index: 100;
+    width: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    background: #DEEBFF;
+}
+.mooveicon i {
+    position: relative;
+    bottom: -3px;
+    left: 2px;
+}
+.iconfiltre {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 110px;
+    height: 35px;
+    padding-left: 40px;
+}
+/*/////////// modification de l'icon familial pour qu'elle soit aligné //////////*/
+#iconefamilial i {
+     position: relative;
+    bottom: -4px;
+    left: 7px;
+}
+#iconefamilial {
+    border-radius: 50px;
+    z-index: 100;
+    width: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    background: #DEEBFF;
+}
+/* modification de texte filtre pour qu'il soit aligné avec les autres icons*/
+#firstfiltre {
+    font-weight: bold;
+    position: relative;
+    top: 9px;
+    margin-right: 20px;
+}
+/*/////////// modification du contenu de l'icon familial /////////////*/
+#filtrefamilial {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 70px;
+    height: 35px;
+    padding-left: 40px;
+}
+/*/////////// modification de l'icon coeur pour qu'elle soit aligné //////////*/
+#iconcoeur i {
+    position: relative;
+   bottom: -5px;
+   left: 5px;
+}
+#iconcoeur {
+   border-radius: 50px;
+   z-index: 100;
+   width: 30px;
+   position: relative;
+   font-size: 20px;
+   padding: 5px;
+   background: #DEEBFF;
+}
+#iconecoeur {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 100px;
+    height: 35px;
+    padding-left: 40px;
+}
+/*//////////// modification du contenu de l'icon animaux autorisés //////////////////*/
+#filtreanimaux {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 150px;
+    height: 35px;
+    padding-left: 40px;
+}
+/* modification des paragraphe contenant le text dans le container1 ////////////////*/
+.parafiltre {
+    position: relative;
+    top: 10px;
+    font-weight: 900;
+}
+/* modification des h2 et balise p contenu dans le bloc des hebergements */
+#bigparent h2, #bigparent2 h2 {
+    margin-left: 15px;
+}
+#bigparent h2 {
+    margin-bottom: -10px;
+    padding: 10px;
+}
+.tresgras {
+    font-weight: bold;
+    margin-left: 12px;
+}
+.tresgrasse {
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: -5px;
+}
+#bigparent2 h2 {
+    margin-bottom: -10px;
+    padding: 10px;
+}
+/*/////////// modification des textes en  pour le premier bloc d'images des hebergements ////////////*/
+#paragrafehebergement {
+    margin-top: -10px;
+}
+.nongras {
+    margin-left: 12px;
+    margin-top: -10px;
+    margin-bottom: 2px;
+}
+/*///////// modification des textes l'autre bloc contenant les 3 blocs d'images sur la droite ///////*/
+.nongras2 {
+    margin-left: 160px;
+    margin-bottom: 30px;
+}
+.tresgras2 {
+    font-weight: bold;
+    margin-left: 160px;
+    margin-bottom: -10px;
+}
+/* modification de l'icon graphic contenu dans le titre les plus populaires /////////*/
+#graphicicon {
+    margin-left: 88px;
+}
+/*/////////////// début du premier bloc avec les 6 images ///////////////////////////////////*/
+#parent {
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+}
+#bigparent {
+    background: #f2f2f2;
+    width: 65%;
+    border-radius: 15px 15px 15px 15px;
+    height: 625px;
+}
+#bigparent2 {
+    background: #f2f2f2;
+    width: 30%;
+    height: 625px;
+    border-radius: 15px 15px 15px 15px;
+}
+/*////////: modification du signe euro en gras dans les textes //////////////*/
+.euro {
+    font-weight: 900;
+}
+/* modification de la couleur des icons contenu dans les blocs des hebergements*/
+.blue {
+    color: #0065FC;
+    font-size: 13px;
+    margin-left: 12px;
+}
+/* modification de la couleur en gris pour les etoiles en gris dans le blocs des hebergements */
+.gris {
+    color: #b4b2b2;
+    font-size: 13px;
+}
+/* mise en place des 6 images en flex*/
+#enfant1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    gap: 45px;
+    background: #f2f2f2;
+}
+/* agencement du bloc des 3 images sur la droite */
+#enfant2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+/* modification des blocs des 6 premieres images, mise en place du background et du contour en border radius*/
+.firstbloc {
+    background: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+} 
+.secondbloc {
+    background: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 25px;
+    height: 130px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+
+/*////////////////////////// agencement des images */
+#enft1  {
+    background: url(../img/3_medium/1ere.jpg);
+    background-size: cover;
+    width: 220px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft2  {
+    background: url(../img/3_medium/2eme.jpg);
+    background-size: cover;
+    width: 220px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft3  {
+    background: url(../img/3_medium/3eme.jpg);
+    background-size: cover;
+    width: 220px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft4  {
+    background: url(../img/3_medium/4eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 220px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft5  {
+    background: url(../img/3_medium/5eme.jpg);
+    background-size: cover;
+    width: 220px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft6  {
+    background: url(../img/3_medium/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 220px;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+/* agencement de l'autre bloc sur la droite contenant les 3 autres images */
+#enft7  {
+    background: url(../img/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 130px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft8  {
+    background: url(../img/3_medium/8eme.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 130px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft9  {
+    background: url(../img/3_medium/9eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 130px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+/*/////////////////////////////////////// agencement du dernier bloc d'images avec le flex /////////////////////////////////////////////*/
+#premierblocactivites {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 65px;
+}
+/* agencement du dernier bloc contenant le reste des images */
+#finalimg1 {
+    background: url(../img/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 280px;
+    height: 330px;
+    max-height: 400px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg2 {
+    background: url(../img/activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 150px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg3 {
+    background: url(../img/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 280px;
+    height: 110px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg4 {
+    background: url(../img/activités/4eme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 280px;
+    height: 330px;
+    max-height: 400px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg5 {
+    background: url(../img/activités/5eme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 280px;
+    height: 110px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg6 {
+    background: url(../img/activités/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 150px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+/* mise en place des contours et du background du dernier bloc d'images*/
+#premiereimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 370px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#deuxiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 40px;
+    height: 180px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#troisiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 150px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#quatriemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 370px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#cinquiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 150px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#sixiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 40px;
+    height: 180px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+/* modification des p dans le dernier bloc */
+#premierblocactivites p {
+    font-weight: bold;
+    margin-left: 20px;
+}
+/*/////////////////////// modification de l'icon i dans la partie info logment  ///////////////*/
+.dot i {
+    color: #0065FC;
+    position: relative;
+    top: 0.5px;
+    left: 8px;
+    font-size: 12px;
+}
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    border: rgba(94, 91, 91, 0.247) solid 1px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  /* modification du paragraphe avec l'icon i dans la partie info logement ////////////////*/
+  #paragrafeinfo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+  }
+  #textinfo {
+      margin-left: 5px;
+      margin-top: 3px;
+  }
+/*///////////////////// modification du footer ///////////////////////////////////////////////////*/
+footer {
+    background: #f2f2f2;
+}
+#final {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 250px;
+  margin: 25px;
+}
+/*===========================   debut de l'agencement du site en version TABLETTE ET MOBILE    =================================================*/
+/*=========================   debut du media screen version TABLETTE =========================*/
+@media (min-width : 768px) and (max-width : 991px) {
+    body {
+        background: chocolate;
+    }
+}
+/*=======================  debut du responsive en version DESKTOP ==================================*/
+
+@media  (min-width : 992px) and (max-width : 1355px) {
+    body {
+        background: red;
+    }
+}
+/*==================== debut du responsive en version MOBILE ====================================*/
+@media screen and (max-width : 767px) {
+    body {
+        background: green;
+    }
+}
