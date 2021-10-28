@@ -17,12 +17,12 @@
 <button class="scrollToTopBtn">
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
 </button>
-<!--------mise en place de la section body qui aura le margin sur le contenu du site sauf sur le footer---------->
- <section id="body">
         <!-----------début du header avec l'icon  -->
     <header>
         <a href="index.html">
-            <div id="imagelogo"></div>
+           <div id="centerimg">
+               <div id="imagelogo"></div>
+            </div>
         </a>
         <nav>
             <div id="navigation">
@@ -36,18 +36,29 @@
         </nav>
     </header>
         <p>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement <br id="jump"> pour des vacances de rêve</h1>
             <legend>
                   En plein centre ville ou en pleine nature
              </legend>
         </p>
      <!-------début de la barre de recherche avec l'icone et le bouton recherche----------->
      <div id="searchbar">
-         <span id="iconsearchbar"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+         <span id="iconsearchbar">
+             <i class="fa fa-map-marker" aria-hidden="true"></i>
+         </span>
       <input type="text" placeholder="Marseille, France">
-      <button type="button" id="recherche">Rechercher</button>
+      <button type="button" id="recherche"> 
+          <span id="searchicon"> 
+              <i class="fas fa-search"></i>
+            </span> 
+            <span id="findme">
+                Rechercher
+            </span>
+        </button>
      </div>
      <!----------début du container contenant les 4 éléments du filtre---------->
+       <!-----------------mise en place de " Filtres" afin de l'utiliser en version mobile et unset en version desktop et tablette------------->
+        <p id="filtremobile">Filtres</p>
      <div id="container1">
             <span id="firstfiltre">Filtres</span>
             
@@ -72,7 +83,7 @@
             <span class="parafiltre">Romantique</span>
         </div>
 
-        <span class="mooveicon"> 
+        <span id="icondog"> 
             <i class="fas fa-dog"></i> 
         </span>
         <div id="filtreanimaux">
@@ -94,119 +105,131 @@
         <section id="bigparent">
             <h2 id="none">Hébergements à Marseille</h2> <br>
             <div id="enfant1">
-                <div class="firstbloc">
-                    <div id="enft1"></div>
-                    <p id="paragrafehebergement">
-                        <p class="tresgras">
-                        Auberge La Cannebière
-                        </p>
-                        <p class="nongras">
-                            Nuit à partir de 25 <span class="euro">€</span>
-                        </p>
-                        <span class="blue">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                       </span>
-                        <span class="gris"><i class="fas fa-star"></i></span>
-                    </p>
-                </div>
-                <div class="firstbloc">
-                    <div id="enft2"></div> 
-                    <p id="paragrafehebergement">
-                        <p class="tresgras">
-                        Hôtel du port
-                        </p>
-                        <p class="nongras">
-                            Nuit à partir de 52 <span class="euro">€</span>
-                        </p>
-                        <span class="blue">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                       </span>
-                    </p>
-                </div>  
-                <div class="firstbloc">
-                    <div id="enft3"></div>
-                    <p id="paragrafehebergement">
-                        <p class="tresgras">
-                        Hôtel Les Mouettes
-                        </p>
-                        <p class="nongras">
-                            Nuit à partir de 76 <span class="euro">€</span>
-                        </p>
-                        <span class="blue">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                       </span>
-                        <span class="gris"><i class="fas fa-star"></i></span>
-                    </p>
-                </div>
-                <div class="firstbloc">
-                    <div id="enft4"></div>
-                    <p id="paragrafehebergement">
-                        <p class="tresgras">
-                        Hôtel de la mer
-                        </p>
-                        <p class="nongras">
-                            Nuit à partir de 46 <span class="euro">€</span>
-                        </p>
-                        <span class="blue">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                       </span>
-                        <span class="gris">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </span>
-                    </p>
-                </div>
-                <div class="firstbloc">
-                    <div id="enft5"></div>
-                    <p id="paragrafehebergement">
-                        <p class="tresgras">
-                        Auberge Le Panier 
-                        </p>
-                        <p class="nongras">
-                            Nuit à partir de 23 <span class="euro">€</span>
-                        </p>
-                        <span class="blue">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                       </span>
-                        <span class="gris">
-                            <i class="fas fa-star"></i>
-                        </span>
-                    </p>
-                </div>
-                <div class="firstbloc">
-                    <div id="enft6"></div>
-                    <p id="paragrafehebergement">
-                        <p class="tresgras">
-                        Hôtel chez Amina
-                        </p>
-                        <p class="nongras">
-                            Nuit à partir de 96 <span class="euro">€</span>
-                        </p>
-                        <span class="blue">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                       </span>
-                        <span class="gris"><i class="fas fa-star"></i></span>
-                    </p>
-                </div>
-            </div> <br> <br> <br>
+                    <div class="firstbloc">
+                        <a href="#">
+                            <div id="enft1"></div>
+                             <p id="paragrafehebergement">
+                            <p class="tresgras">
+                            Auberge La Cannebière
+                            </p>
+                            <p class="nongras">
+                                Nuit à partir de 25 <span class="euro">€</span>
+                            </p>
+                            <span class="blue">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                           </span>
+                            <span class="gris"><i class="fas fa-star"></i></span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="firstbloc">
+                        <a href="#">
+                            <div id="enft2"></div> 
+                            <p id="paragrafehebergement">
+                                <p class="tresgras">
+                                Hôtel du port
+                                </p>
+                                <p class="nongras">
+                                    Nuit à partir de 52 <span class="euro">€</span>
+                                </p>
+                                <span class="blue">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                            </p>
+                        </a>
+                    </div> 
+                    <div class="firstbloc">
+                        <a href="#">
+                            <div id="enft3"></div>
+                            <p id="paragrafehebergement">
+                                <p class="tresgras">
+                                Hôtel Les Mouettes
+                                </p>
+                                <p class="nongras">
+                                    Nuit à partir de 76 <span class="euro">€</span>
+                                </p>
+                                <span class="blue">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                                <span class="gris"><i class="fas fa-star"></i></span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="firstbloc">
+                        <a href="#">
+                            <div id="enft4"></div>
+                            <p id="paragrafehebergement">
+                                <p class="tresgras">
+                                Hôtel de la mer
+                                </p>
+                                <p class="nongras">
+                                    Nuit à partir de 46 <span class="euro">€</span>
+                                </p>
+                                <span class="blue">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                                <span class="gris">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="firstbloc">
+                        <a href="#">
+                            <div id="enft5"></div>
+                            <p id="paragrafehebergement">
+                                <p class="tresgras">
+                                Auberge Le Panier 
+                                </p>
+                                <p class="nongras">
+                                    Nuit à partir de 23 <span class="euro">€</span>
+                                </p>
+                                <span class="blue">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                                <span class="gris">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="firstbloc">
+                        <a href="#">
+                            <div id="enft6"></div>
+                            <p id="paragrafehebergement">
+                                <p class="tresgras">
+                                Hôtel chez Amina
+                                </p>
+                                <p class="nongras">
+                                    Nuit à partir de 96 <span class="euro">€</span>
+                                </p>
+                                <span class="blue">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                                <span class="gris"><i class="fas fa-star"></i></span>
+                            </p>
+                        </a>
+                    </div>
+            </div>
             <p class="tresgrasse">Afficher plus</p>
         </section>
         <!------------------début du bloc contenant les 3 autres images sur la droite------------->
@@ -217,89 +240,107 @@
                 </span>
              </h2>
             <div id="enfant2">
-                <div class="secondbloc">
-                    <div id="enft7"></div>
-                    <p class="tresgras2">Hôtel Le soleil du matin</p>
-                    <p class="nongras2">
-                        Nuit à partir de 128
-                        <span class="euro">€</span>
-                    </p> 
-                    <span class="blue">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
-                </div>
-                <div class="secondbloc">
-                    <div id="enft8"></div>
-                    <p class="tresgras2"> Au coeur de l'eau Chambres d'hôtes</p>  
-                    <p class="nongras2"> 
-                        Nuit à partir de 71
-                        <span class="euro">€</span>
-                    </p> 
-                    <span class="blue">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
-                        <span class="gris"><i class="fas fa-star"></i></span>
-                </div>  
-                <div class="secondbloc">
-                    <div id="enft9"></div>
-                    <p class="tresgras2">Hôtel Tout bleu et Blanc</p>
-                    <p class="nongras2">
-                        Nuit à partir de 68
-                        <span class="euro">€</span>
-                    </p> 
-                    <span class="blue">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
-                        <span class="gris"><i class="fas fa-star"></i></span>
-                </div>
+                <a href="#">
+                    <div class="secondbloc">
+                        <div id="enft7"></div>
+                        <p class="tresgras2">Hôtel Le soleil du matin</p>
+                        <p class="nongras2">
+                            Nuit à partir de 128
+                            <span class="euro">€</span>
+                        </p> 
+                        <span class="blue">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="secondbloc">
+                        <div id="enft8"></div>
+                        <p class="tresgras2"> Au coeur de l'eau Chambres d'hôtes</p>  
+                        <p class="nongras2"> 
+                            Nuit à partir de 71
+                            <span class="euro">€</span>
+                        </p> 
+                        <span class="blue">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                            <span class="gris"><i class="fas fa-star"></i></span>
+                    </div>  
+                </a>
+                <a href="#">
+                    <div class="secondbloc">
+                        <div id="enft9"></div>
+                        <p class="tresgras2">Hôtel Tout bleu et Blanc</p>
+                        <p class="nongras2">
+                            Nuit à partir de 68
+                            <span class="euro">€</span>
+                        </p> 
+                        <span class="blue">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                            <span class="gris"><i class="fas fa-star"></i></span>
+                    </div>
+                </a>
              </div>
         </section>
     </div>
+    
 <!---------------début de l'agencement du bloc contenant les activites à faire------------------>
-    <h2>Activités à Marseille</h2>
+    <h2 id="titreactivites">Activités à Marseille</h2>
     <div id="parentactivites">
         <div id="premierblocactivites">
-            <div id="premiereimg">
-                <div id="finalimg1"></div>
-                <p>Vieux Port</p>
-            </div>
+            <a href="#">
+                <div id="premiereimg">
+                    <div id="finalimg1"></div>
+                    <p>Vieux Port</p>
+                </div>
+            </a>
             <div>
-                <div id="deuxiemeimg">
-                    <div id="finalimg2"></div>
-                    <p>Port des Pomègues</p>
-                </div>
-                <div id="troisiemeimg">
-                    <div id="finalimg3"></div>
-                    <p>Îles du Frioul</p>
-                </div>
+                <a href="#">
+                    <div id="deuxiemeimg">
+                        <div id="finalimg2"></div>
+                        <p>Port des Pomègues</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="troisiemeimg">
+                        <div id="finalimg3"></div>
+                        <p>Îles du Frioul</p>
+                    </div>
+                </a>
             </div>
-            <div id="quatriemeimg">
-                <div id="finalimg4"></div>
-                <p>Parc National des Calanques</p>
-            </div>
+            <a href="#">
+                <div id="quatriemeimg">
+                    <div id="finalimg4"></div>
+                    <p>Parc National des Calanques</p>
+                </div>
+            </a>
             <div>
-                <div id="cinquiemeimg">
-                    <div id="finalimg5"></div>
-                    <p>Notre-Dame-de-la-Garde</p>
-                </div>
-                <div id="sixiemeimg">
-                    <div id="finalimg6"></div>
-                    <p>Parc Longchamp</p>
-                </div>
+                <a href="#">
+                    <div id="cinquiemeimg">
+                        <div id="finalimg5"></div>
+                        <p>Notre-Dame-de-la-Garde</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="sixiemeimg">
+                        <div id="finalimg6"></div>
+                        <p>Parc Longchamp</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
- </section>
  <!-----------début de l'agencement du footer------------------------>
  <footer>
     <section id="final">

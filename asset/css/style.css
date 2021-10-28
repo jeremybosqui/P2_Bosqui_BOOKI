@@ -18,7 +18,7 @@ html {
     /* place it at the bottom right corner */
     position: fixed;
     bottom: 150px;
-    right: 5px;
+    right: 1.5px;
     /* keep it at the top of everything else */
     z-index: 100;
     /* hide with opacity */
@@ -32,11 +32,16 @@ html {
     opacity: 1;
     transform: translateY(0)
   }
-/* mise en place de la marge sur tout le coprs du site sauf sauf le footer ///////////////////////*/
-#body {
-    margin: 25px;
-    background: rgb(255, 255, 255);
+
+  /*=================== suppression du br qui sert à mettre le mot "pour" à la ligne en version mobile et inutile pour les autres version desktop et tablette ===============================*/
+  #jump {
+      display: none;
+  }
+  /*==============   suppression du mot filtre en version desktop et tablette qui ne sert à rien ==============================*/
+#filtremobile {
+    display: none;
 }
+
 /* début de la mise en forme du logo et de son positionnement ainsi que de sa taille /////////////////*/
 #imagelogo {
     background: url(../img/Booki@3x.png) no-repeat ;
@@ -46,9 +51,20 @@ html {
     margin-bottom: 25px;
     margin-top: 20px;
 }
+ /*===============  modification du h1  ===========*/
+ h1 {
+    font-size: 20px;
+    margin: 20px;
+}
+legend {
+    margin: 20px;
+}
+/* ============= modification de la legend du h1 ========*/
+
 /*////////////////////// modification de la barre de recherche ////////////*/
 #searchbar {
     display: flex;
+    margin: 20px;
 }
 #recherche, input, #searchbar span {
     padding: 13px;
@@ -60,6 +76,10 @@ button {
     font-weight: 900;
     border: none;
     cursor: pointer;
+}
+/*============= suppression de l'icon recherche en version desktop et tablette =============*/
+#searchicon {
+    display: none;
 }
 #iconsearchbar {
     background: #f2f2f2;
@@ -76,7 +96,7 @@ button {
 }
 input {
     border: 1px solid rgba(141, 139, 139, 0.178);
-    outline-color:#0065FC  ;
+    outline-color:#0065fc5e  ;
     border-left: none;
     font-weight: 900;
 }
@@ -91,28 +111,35 @@ header {
 /*///// debut modification de la nav bar contenant les 2 a avec les ID relié à ceux-ci ///////////////*/
 #navigation {
     overflow: hidden;
-    margin-top: -25px;
   }
   #navigation a {
     float: left;
-    margin-right: 50px;
+    
     display: block;
     color: black;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
-    padding: 40px 16px ;
-
+    padding: 37px 40px ;
   }
   #navigation a:hover {
-    border-top: 3px solid #0065FC ;
+    border-top: 2px solid #0065FC ;
     color: #0065FC;
   }
-/* début du dropdown contenant les différents choix des filtres */
+/*======================== modification de la partie filtres =========*/
 #container1{
     display: inline-flex;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin: 20px;
+}
+ /*================= modification du paragraphe avec l'icon i dans la partie info logement =================*/
+ #paragrafeinfo {
+    margin: 20px;
+    display: flex;
+}
+#textinfo {
+    margin-left: 5px;
+    margin-top: 3px;
 }
 /* modification de la couleur des icons en bleu */
 #container1 i {
@@ -127,6 +154,22 @@ header {
     padding: 5px;
     background: #DEEBFF;
 }
+/*============ icon dog modification =======================*/
+#icondog {
+    border-radius: 50px;
+    z-index: 100;
+    width: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    background: #DEEBFF;
+}
+#icondog i {
+    position: relative;
+    left: 5px;
+    top: 3px;
+}
+/*==================================*/
 .mooveicon i {
     position: relative;
     bottom: -3px;
@@ -140,6 +183,11 @@ header {
     width: 110px;
     height: 35px;
     padding-left: 40px;
+}
+.iconfiltre:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: default;
 }
 /*/////////// modification de l'icon familial pour qu'elle soit aligné //////////*/
 #iconefamilial i {
@@ -173,6 +221,11 @@ header {
     height: 35px;
     padding-left: 40px;
 }
+#filtrefamilial:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: default;
+}
 /*/////////// modification de l'icon coeur pour qu'elle soit aligné //////////*/
 #iconcoeur i {
     position: relative;
@@ -197,6 +250,11 @@ header {
     height: 35px;
     padding-left: 40px;
 }
+#iconecoeur:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: default;
+}
 /*//////////// modification du contenu de l'icon animaux autorisés //////////////////*/
 #filtreanimaux {
     border-radius: 50px;
@@ -206,6 +264,11 @@ header {
     width: 150px;
     height: 35px;
     padding-left: 40px;
+}
+#filtreanimaux:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: default;
 }
 /* modification des paragraphe contenant le text dans le container1 ////////////////*/
 .parafiltre {
@@ -228,7 +291,6 @@ header {
 .tresgrasse {
     font-weight: bold;
     margin-left: 25px;
-    margin-top: -5px;
 }
 #bigparent2 h2 {
     margin-bottom: -10px;
@@ -262,6 +324,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 650px;
+    margin: 20px;
 }
 #bigparent {
     background: #f2f2f2;
@@ -294,10 +357,13 @@ header {
 #enfant1 {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    gap: 45px;
+    gap: 25px;
+    margin: 20px;
     background: #f2f2f2;
+}
+#enfant1 a {
+    text-decoration: none;
+    color: black;
 }
 /* agencement du bloc des 3 images sur la droite */
 #enfant2 {
@@ -306,7 +372,11 @@ header {
     flex-wrap: wrap;
     border-radius: 10px;
 }
-/* modification des blocs des 6 premieres images, mise en place du background et du contour en border radius*/
+#enfant2 a {
+    text-decoration: none;
+    color: black;
+}
+/* modification des blocs des 6 premieres images du bloc des hebergemetns à marseille, mise en place du background et du contour en border radius*/
 .firstbloc {
     background: white;
     border: 5px solid white;
@@ -327,21 +397,21 @@ header {
 #enft1  {
     background: url(../img/3_medium/1ere.jpg);
     background-size: cover;
-    width: 220px;
+    width: 245px;
     height: 125px;
     border-radius: 15px 15px 0px 0px;
 }
 #enft2  {
     background: url(../img/3_medium/2eme.jpg);
     background-size: cover;
-    width: 220px;
+    width: 245px;
     height: 125px;
     border-radius: 15px 15px 0px 0px;
 }
 #enft3  {
     background: url(../img/3_medium/3eme.jpg);
     background-size: cover;
-    width: 220px;
+    width: 245px;
     height: 125px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -349,14 +419,14 @@ header {
     background: url(../img/3_medium/4eme.jpg);
     background-size: cover;
     background-position: center;
-    width: 220px;
+    width: 245px;
     height: 125px;
     border-radius: 15px 15px 0px 0px;
 }
 #enft5  {
     background: url(../img/3_medium/5eme.jpg);
     background-size: cover;
-    width: 220px;
+    width: 245px;
     height: 125px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -364,7 +434,7 @@ header {
     background: url(../img/3_medium/6eme.jpg);
     background-size: cover;
     background-position: center;
-    width: 220px;
+    width: 245px;
     height: 125px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -395,11 +465,23 @@ header {
     border-radius: 15px 0px 0px 15px;
 }
 /*/////////////////////////////////////// agencement du dernier bloc d'images avec le flex /////////////////////////////////////////////*/
+#parentactivites {
+    margin: 20px;
+}
 #premierblocactivites {
     display: inline-flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-evenly;
     gap: 65px;
+}
+#premierblocactivites a {
+    text-decoration: none;
+    color: black;
+}
+/* ============ modification du titre activites =====================*/
+#titreactivites {
+    margin: 20px;
 }
 /* agencement du dernier bloc contenant le reste des images */
 #finalimg1 {
@@ -408,7 +490,6 @@ header {
     background-position: bottom;
     width: 280px;
     height: 330px;
-    max-height: 400px;
     border-radius: 15px 15px 0px 0px;
 }
 #finalimg2 {
@@ -416,8 +497,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 280px;
-    height: 150px;
-    max-height: 140px;
+    height: 140px;
     border-radius: 15px 15px 0px 0px;
 }
 #finalimg3 {
@@ -426,7 +506,6 @@ header {
     background-position: top;
     width: 280px;
     height: 110px;
-    max-height: 140px;
     border-radius: 15px 15px 0px 0px;
 }
 #finalimg4 {
@@ -435,7 +514,6 @@ header {
     background-position: bottom;
     width: 280px;
     height: 330px;
-    max-height: 400px;
     border-radius: 15px 15px 0px 0px;
 }
 #finalimg5 {
@@ -444,7 +522,6 @@ header {
     background-position: bottom;
     width: 280px;
     height: 110px;
-    max-height: 140px;
     border-radius: 15px 15px 0px 0px;
 }
 #finalimg6 {
@@ -452,8 +529,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 280px;
-    height: 150px;
-    max-height: 140px;
+    height: 140px;
     border-radius: 15px 15px 0px 0px;
 }
 /* mise en place des contours et du background du dernier bloc d'images*/
@@ -517,16 +593,7 @@ header {
     border-radius: 50%;
     display: inline-block;
   }
-  /* modification du paragraphe avec l'icon i dans la partie info logement ////////////////*/
-  #paragrafeinfo {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      display: flex;
-  }
-  #textinfo {
-      margin-left: 5px;
-      margin-top: 3px;
-  }
+ 
 /*///////////////////// modification du footer ///////////////////////////////////////////////////*/
 footer {
     background: #f2f2f2;
@@ -537,23 +604,961 @@ footer {
   gap: 250px;
   margin: 25px;
 }
-/*===========================   debut de l'agencement du site en version TABLETTE ET MOBILE    =================================================*/
+
+
+/*===============================================================================   debut de l'agencement du site en version TABLETTE ET MOBILE    ======================================================================================*/
 /*=========================   debut du media screen version TABLETTE =========================*/
 @media (min-width : 768px) and (max-width : 991px) {
+    /*==================== modificaiton des textes en responsive     =================*/
     body {
-        background: chocolate;
+        font-size: 12px;
     }
+    .tresgrasse {
+        margin-left: 40px;
+    }
+    #titreactivites {
+        margin: 20px;
+        margin-left: 35px;
+    }
+    #paragrafehebergement {
+        margin-top: 10px;
+    }
+/*========================  modification des images    du premier bloc des 9 images en flex column reverse =========================================*/
+/*============== modification des 3 premieres images =========================*/
+#enft7  {
+    background: url(../img/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    width: 45%;
+    max-width: 50%;
+    height: 130px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft8  {
+    background: url(../img/3_medium/8eme.jpg);
+    background-size: cover;
+    width: 45%;
+    max-width: 50%;
+    height: 130px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft9  {
+    background: url(../img/3_medium/9eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    margin-right: 10px;
+    max-width: 50%;
+    height: 130px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft1  {
+    background: url(../img/3_medium/1ere.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft2  {
+    background: url(../img/3_medium/2eme.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft3  {
+    background: url(../img/3_medium/3eme.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft4  {
+    background: url(../img/3_medium/4eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft5  {
+    background: url(../img/3_medium/5eme.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft6  {
+    background: url(../img/3_medium/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*====================== modification des blocs contenant les 9 images des hebergements ========================*/
+
+#parent {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: unset;
+    margin-bottom: 1685px;
+}
+#bigparent {
+    background: unset;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    height: 0px;
+}
+#bigparent2 {
+    background: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+}
+.secondbloc {
+    background: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 18px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#enfant1 {
+    background: unset;
+    gap: 0px;
+}
+#parent a {
+    text-decoration: none;
+}
+.firstbloc {
+    width: 100%;
+    margin: 20px;
+}
+/*======================  modification du dernier bloc sur les activités ============================*/
+#premierblocactivites {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 65px;
+}
+/*==============================  modification du footer  ========================================*/
+#final {
+    gap: 100px;
+}
+/*============================ modification des filtres =====================================*/
+#filtreanimaux {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 115px;
+    height: 35px;
+    padding-left: 40px;
+}
+#iconecoeur {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 80px;
+    height: 35px;
+    padding-left: 40px;
+}
+#filtrefamilial {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 55px;
+    height: 35px;
+    padding-left: 38px;
+}
+.iconfiltre {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    left: -35px;
+    width: 85px;
+    height: 35px;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+
 }
 /*=======================  debut du responsive en version DESKTOP ==================================*/
 
 @media  (min-width : 992px) and (max-width : 1355px) {
     body {
-        background: red;
+        font-size: 11px;
     }
+    /*====== modification texte partie filtre =====*/
+    #container1 {
+        font-size: 14px;
+    }
+/*===================================================   agencement des blocs des hebergements à marseille   =====================================*/
+#parent {
+    display: flex;
+    justify-content: space-between;
+    height: 555px;
+    margin: 20px;
 }
+#bigparent {
+    background: #f2f2f2;
+    width: 72%;
+    border-radius: 15px 15px 15px 15px;
+    height: 515px;
+}
+#bigparent2 {
+    background: #f2f2f2;
+    width: 25%;
+    height: 515px;
+    border-radius: 15px 15px 15px 15px;
+}
+.firstbloc {
+    height: 175px;
+    width: 30%;
+}
+#enfant1 {
+    gap: 16px;
+    margin: 10px;
+}
+.secondbloc {
+    background: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+    height: 100px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+/*=============================== modification de la taille des textes ====================*/
+#paragrafehebergement {
+    margin-top: 0px;
+}
+.tresgras2 {
+    font-size: 11px;
+    margin-left: 100px;
+}
+.nongras2 {
+    font-size: 11px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+#bigparent2 h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#graphicicon {
+    margin-left: 30px;
+}
+.blue, .gris {
+    font-size: 10px;
+}
+
+/*=========================================================================   modification des images  ======================================*/
+#enft1  {
+    background: url(../img/3_medium/1ere.jpg);
+    background-size: cover;
+    width: auto;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft2  {
+    background: url(../img/3_medium/2eme.jpg);
+    background-size: cover;
+    width: auto;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft3  {
+    background: url(../img/3_medium/3eme.jpg);
+    background-size: cover;
+    width: auto;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft4  {
+    background: url(../img/3_medium/4eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft5  {
+    background: url(../img/3_medium/5eme.jpg);
+    background-size: cover;
+    width: auto;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft6  {
+    background: url(../img/3_medium/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft7  {
+    background: url(../img/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 42%;
+    height: 100px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft8  {
+    background: url(../img/3_medium/8eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 42%;
+    height: 100px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft9  {
+    background: url(../img/3_medium/9eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 42%;
+    height: 100px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+/*=====================================  modification du dernier bloc contenant les autres images ====================================*/
+#premierblocactivites {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+#premiereimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 313px;
+    width: 215px;
+    box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
+}
+
+#deuxiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 40px;
+    height: 152px;
+    width: 215px;
+    box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
+}
+
+#troisiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 120px;
+    width: 215px;
+    box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
+}
+#quatriemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 313px;
+    width: 215px;
+    box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
+}
+#cinquiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 120px;
+    width: 215px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
+}
+#sixiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 40px;
+    height: 152px;
+    width: 215px;
+    box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
+}
+/*=================================================== modification des images du dernier blocs , les activites à marseille ======================================*/
+#finalimg1 {
+    background: url(../img/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 277px;
+    max-height: 397px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#finalimg2 {
+    background: url(../img/activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg3 {
+    background: url(../img/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 85px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg4 {
+    background: url(../img/activités/4eme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 277px;
+    max-height: 397px;
+    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg5 {
+    background: url(../img/activités/5eme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 85px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg6 {
+    background: url(../img/activités/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    max-height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+/*===========================   modification du bloc mentions legal contenu dans le footer  ========================*/
+#final {
+    gap: 140px;
+    margin: 20px;
+}
+
+}
+
 /*==================== debut du responsive en version MOBILE ====================================*/
 @media screen and (max-width : 767px) {
-    body {
-        background: green;
+    #imagelogo {
+        background: url(../img/Booki@3x.png) no-repeat ;
+        background-size: cover;
     }
+/* agencement du header avec les élements de la nav côté droit du haut de la page juste en face du logo */
+header {
+    display: block;
+}
+/*==================== marge sur le body ===================*/
+
+/*=============== centre logo =================*/
+#centerimg {
+    display: flex;
+    justify-content: center;
+}
+/*=============================== suppression du mot " Filtres " contenu dans la div avec les filtre pour l'afficher au-dessus ======================*/
+#firstfiltre {
+    display: none;
+}
+/*========================   affichage du mot "Filtres" ========================*/
+#filtremobile {
+    display: unset;
+    font-weight: 900;
+    margin: 20px;
+}
+
+/*///// debut modification de la nav bar contenant les 2 a avec les ID relié à ceux-ci ///////////////*/
+#navigation {
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #navigation a {
+    margin-right: auto;
+    color: black;
+    width: 50%;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom:  2px gray solid;
+    padding: 0px 0px 10px 0px ;
+
+  }
+  #navigation a:hover {
+      border-top: none;
+    border-bottom: 2px solid #0065FC ;
+    color: #0065FC;
+  }
+  /*===============  modification du h1  ===========*/
+  h1 {
+      font-size: 20px;
+      margin: 20px;
+  }
+  /* ============= modification de la legend du h1 ========*/
+  legend {
+      margin: 20px;
+  }
+
+/*==================== modification de la barre de recherche ======================*/
+#searchbar {
+    display: flex;
+    margin: 20px;
+    margin-left: 40px;
+}
+button {
+    background: #0065FC ;
+    border-radius: 15px 15px 15px 15px;
+    color: white;
+    position: relative;
+    left: -20px;
+    border: none;
+    width: 45px;
+    z-index: 100;
+    overflow: hidden;
+}
+#iconsearchbar {
+    background: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    border-right: none;
+}
+#iconsearchbar i {
+    position: relative;
+    top: 2px;
+    left: 3px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+/*=================== suppression du texte recherche dans la barre de recherche ======================*/
+#findme {
+    display: none;
+}
+/* ==================== affichage de l'icon recherche =============== et ensuite =========== modificaiton de l'icon au centre du bouton =====================*/
+#searchicon {
+    display: unset;
+    position: relative;
+    right: 11px;
+    top: 1px;
+}
+/* ========== modification input ============*/
+input {
+    overflow: hidden;
+}
+
+/* =============== remise en forme du br servant à mettre le mot "pour" à la ligne en version MOBILE ==========================*/
+#jump {
+    display: unset;
+}
+/* ================================== modification de la partie filtre =========================*/
+#container1{
+    width: 100%;
+    gap: 10px;
+    margin: 0px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+/*=======================  modification un span textinfo ====================*/
+#paragrafeinfo {
+    margin: 20px;
+    margin-bottom: 80px;
+    display: flex;
+}
+#textinfo {
+    margin-left: 10px;
+}
+.dot {
+    margin-left: 10px;
+}
+.dot i {
+    position: relative;
+    left: 6.5px;
+    top: 0px;
+}
+/*=====================================*/
+#container1 i {
+    color: #0065FC;
+}
+/*==============   modificaiton de la div qui encore le contenu texte + les icons en cercle ==============================*/
+
+.mooveicon {
+    border-radius: 50px;
+ z-index: 100;
+ width: 30px;
+ position: relative;
+ font-size: 20px;
+ padding: 5px;
+ left: 20px;
+ background: #DEEBFF;
+}
+.iconfiltre {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: unset;
+    height: 35px;
+    position: relative;
+    left: -40px;
+    width: 105px;
+    padding-left: 45px;
+}
+/*====================================*/
+#iconecoeur {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    height: 35px;
+    width: 105px;
+    left: -80px;
+    padding-left: 45px;
+}
+
+/*================================*/
+#filtreanimaux {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    height: 35px;
+    width: 40%;
+    margin-left: -50px;
+    padding-left: 40px;
+}
+#icondog {
+    border-radius: 50px;
+    z-index: 100;
+    width: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    top: 49px;
+    right: 276px;
+    background: #DEEBFF;
+}
+/*===============================================================*/
+
+/* =============== modification filtre > familial ===================*/
+/*#iconefamilial i {
+ 
+}*/
+#filtrefamilial {
+    border-radius: 50px;
+    border: 2px solid rgba(141, 139, 139, 0.459);
+    position: relative;
+    width: 20%;
+    height: 35px;
+    margin-left: -62.9px;
+    padding-left: 45px;
+}
+
+#iconefamilial {
+    border-radius: 50px;
+    z-index: 100;
+    width: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    left: -38px;
+    background: #DEEBFF;
+}
+
+/*============== modification des textes contenu dans les blocs d'images des hébergements ===============================*/
+#bigparent2 h2 {
+    margin-bottom: -10px;
+    padding: unset;
+    padding-bottom: 10px;
+}
+.nongras2 {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+}
+.tresgras2 {
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -10px;
+}
+
+/*========================  modification des images    du premier bloc des 9 images en flex column reverse =========================================*/
+/*============== modification des 3 premieres images =========================*/
+#enft7  {
+    background: url(../img/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    width: 45%;
+    max-width: 50%;
+    height: 130px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft8  {
+    background: url(../img/3_medium/8eme.jpg);
+    background-size: cover;
+    width: 45%;
+    max-width: 50%;
+    height: 130px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft9  {
+    background: url(../img/3_medium/9eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    margin-right: 10px;
+    max-width: 50%;
+    height: 130px;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+#enft1  {
+    background: url(../img/3_medium/1ere.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft2  {
+    background: url(../img/3_medium/2eme.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft3  {
+    background: url(../img/3_medium/3eme.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft4  {
+    background: url(../img/3_medium/4eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft5  {
+    background: url(../img/3_medium/5eme.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+#enft6  {
+    background: url(../img/3_medium/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 125px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*====================== modification des blocs contenant les 9 images des hebergements ========================*/
+
+#parent {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: unset;
+    margin-bottom: 1560px;
+}
+#bigparent {
+    background: white;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    height: 125px;
+}
+#bigparent2 {
+    background: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+}
+.secondbloc {
+    background: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 18px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#enfant1 {
+    background: unset;
+    gap: 0px;
+}
+#parent a {
+    text-decoration: none;
+}
+.firstbloc {
+    width: 100%;
+    margin: 20px;
+}
+/*===============================================================================*/
+/*============================ modification du bouton scroll vers le top ====================================================*/
+.scrollToTopBtn {
+    background-color: rgba(0, 0, 0, 0.234);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 40px;
+    width: 40px;
+  
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 20px;
+    left: 3px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+  }
+  
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/*==============================================================*/
+
+/*=======================================   modification du dernier bloc d'images contenant les activités =====================================*/
+/*============= modification des images ================*/
+#finalimg1 {
+    background: url(../img/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg2 {
+    background: url(../img/activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg3 {
+    background: url(../img/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg4 {
+    background: url(../img/activités/4eme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg5 {
+    background: url(../img/activités/5eme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#finalimg6 {
+    background: url(../img/activités/6eme.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+/*=================== modification du bloc contenant les 6 images des activités ============================================*/
+#parentactivites {
+    margin: 20px;
+    margin-top: 30px;
+}
+#premierblocactivites {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+#premiereimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 200px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#deuxiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+    height: 200px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#troisiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 200px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#quatriemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 200px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#cinquiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+#sixiemeimg {
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 35px;
+    height: 200px;
+    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
+}
+/*====================== modification du footer  ==================================*/
+
+#final {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 20px;
+}
+
 }

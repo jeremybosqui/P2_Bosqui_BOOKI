@@ -1,14 +1,15 @@
+'use strict'
 let scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 let rootElement = document.documentElement;
 
 function handleScroll() {
-  // donner les indications au bouton en lui disant de remonter en haut de la page et definir un height 
+  // donner les indications au bouton en lui disant de remonter en haut de la page et definir une hauteur
   var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-  if ((rootElement.scrollTop / scrollTotal ) > 0.45) {
-    // montrer le bouton 
+  if ((rootElement.scrollTop / scrollTotal) > 0.45) {
+    // montrer le bouton
     scrollToTopBtn.classList.add("showBtn");
   } else {
-    // cacher le bouton grave au remove 
+    // cacher le bouton grave a la suppression
     scrollToTopBtn.classList.remove("showBtn");
   }
 }
