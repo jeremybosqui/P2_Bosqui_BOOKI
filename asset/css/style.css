@@ -1562,7 +1562,18 @@ input {
     margin: 20px;
 }
 
-
+@media only screen and (width: 412px) {
+    #iconecoeur {
+        left: -78px;    
+    }
+    
+    #filtrefamilial {
+        margin-left: -61.9px;
+    }
+    #container1 {
+        width: 90%;
+    }
+}
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
 @media only screen and (width : 360px) {
     #container1 {
