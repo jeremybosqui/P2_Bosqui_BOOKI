@@ -1561,7 +1561,7 @@ input {
     gap: 0px;
     margin: 20px;
 }
-}
+
 
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
 @media only screen and (width : 360px) {
@@ -1569,74 +1569,23 @@ input {
         width: 104%;
     }
 }
-@media  (min-width : 379px) and (max-width : 382px) {
+
+}
+@media only screen and (width: 414px) {
+    #iconecoeur {
+        left: -78px;    
+    }
+    
+    #filtrefamilial {
+        margin-left: -61.9px;
+    }
     #container1 {
-       width : 98%
-    }
-    }
-    @media  (min-width : 383px) and (max-width : 386px) {
-    #container1 {
-       width : 97%
-    }
-    }
-    @media  (min-width : 387px) and (max-width : 390px) {
-    #container1 {
-       width : 96%
-    }
-    }
-    @media  (min-width : 391px) and (max-width : 394px) {
-    #container1 {
-       width : 95%
-    }
-    }
-    @media  (min-width : 395px) and (max-width : 399px) {
-    #container1 {
-       width : 94%
-    }
-    }
-    @media  (min-width : 400px) and (max-width : 403px) {
-    #container1 {
-       width : 93%
-    }
-    }
-    @media  (min-width : 404px) and (max-width : 407px) {
-    #container1 {
-       width : 92%
-    }
-    }
-    @media  (min-width : 408px) and (max-width : 412px) {
-    #container1 {
-       width : 90%
-    }
-    }
-@media  (min-width: 414px) and (max-width : 421px) {
-  
-    #container1 {
-        width: 89%;
+        width: 90%;
     }
 }
-@media  (min-width: 422px) and (max-width : 426px) {
-  
+@media only screen and (width : 425px) {
     #container1 {
         width: 88%;
-    }
-}
-@media  (min-width: 427px) and (max-width : 431px) {
-  
-    #container1 {
-        width: 87%;
-    }
-}
-@media  (min-width: 432px) and (max-width : 436px) {
-  
-    #container1 {
-        width: 86%;
-    }
-}
-@media  (min-width: 437px) and (max-width : 441px) {
-  
-    #container1 {
-        width: 85%;
     }
 }
 @media only screen and (width : 578px) {
@@ -1701,6 +1650,7 @@ input {
     
     }
 }
+
 @media only screen and (width: 540px) {
     #container1 {
         width: 69%;
