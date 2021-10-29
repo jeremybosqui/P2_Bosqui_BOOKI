@@ -1564,7 +1564,7 @@ input {
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
 @media (min-width: 400px) and (max-width: 410px) {
     #container1 {
-        display: none;
+        width: 88%;
     }
 }
 @media only screen and (width: 320px) {
