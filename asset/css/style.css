@@ -1576,11 +1576,26 @@ input {
         width: 78%;
     }    
 }
-@media only screen and (width : 412px) {
+@media only screen and (width: 414px) {
     #container1 {
-        width: 91%;
+        width: 90%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+
         background-color: green;
-    }  
+    }
+}
+@media only screen and (width: 412px) {
+    #container1 {
+        width: 89%;
+        gap: 10px;
+        background-color: red;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
 }
 @media  only screen and (width : 667px)   {
     
