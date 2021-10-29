@@ -1695,7 +1695,7 @@ input {
     }
   
 }
-@media (min-width : 402px) and (max-width : 412px) {
+@media (width : 412px) {
 #container1 {
     width: 90%;
 }
