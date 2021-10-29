@@ -1569,7 +1569,7 @@ input {
         width: 104%;
     }
 }
-
+/*===========================================*/
 }
 @media only screen and (width: 414px) {
     #iconecoeur {
@@ -1695,3 +1695,9 @@ input {
     }
   
 }
+@media (min-width : 402px) and (max-width : 412px) {
+#container1 {
+    width: 90%;
+}
+}
+ 
