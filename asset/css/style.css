@@ -1564,17 +1564,16 @@ input {
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
 @media (min-width: 400px) and (max-width: 405px) {
     #container1 {
-        background: #0065FC;
+        width: 93%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
     }
 }
+/*=================================================*/
 @media (min-width: 406px) and (max-width: 410px) {
     #container1 {
-        background: #b500fc;
-    }
-}
-@media (min-width: 411px) and (max-width: 416px) {
-    #container1 {
-        background: red;
         width: 90%;
         gap: 10px;
         margin: 0px;
@@ -1582,26 +1581,47 @@ input {
         justify-content: space-evenly;
     }
 }
+/*=================================================*/
+@media (min-width: 411px) and (max-width: 416px) {
+    #container1 {
+        width: 90%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
+/*=================================================*/
 @media (min-width: 417px) and (max-width: 421px) {
     #container1 {
-        background: green;
+        width: 89%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
     }
 }
+/*=================================================*/
 @media (min-width: 422px) and (max-width: 424px) {
     #container1 {
-        background: black;
+        width: 88%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
     }
 }
-@media (min-width: 376px) and (max-width: 399px) {
+/*=================================================*/
+@media (min-width: 376px) and (max-width: 382px) {
     #container1 {
-       background: blueviolet;
+        width: 98%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
     }
 }
-@media (min-width: 426px) and (max-width: 430px) {
-    #container1 {
-       background: coral;
-    }
-}
+/*=================================================*/
 @media only screen and (width: 320px) {
 
     #container1 {
@@ -1680,13 +1700,14 @@ input {
         padding-left: 40px;
     }
     }
-
+/*=================================================*/
 @media only screen and (width: 375px) {
     #container1 {
         width: 100%;
     
     }
 }
+/*=================================================*/
 @media only screen and (width: 425px) {
     #container1 {
         width: 88%;
@@ -1696,6 +1717,7 @@ input {
         justify-content: space-evenly;
     }
 }
+/*=================================================*/
 @media only screen and (width : 578px) {
     #iconcoeur {
         right: 466px;
@@ -1710,6 +1732,7 @@ input {
         width: 78%;
     }    
 }
+/*=================================================*/
 @media  only screen and (width : 667px)   {
     
     #container1 {
