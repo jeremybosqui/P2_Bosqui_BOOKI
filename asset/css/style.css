@@ -1597,6 +1597,48 @@ input {
         width: 78%;
     }    
 }
+@media  only screen and (width : 667px)   {
+    
+    #container1 {
+        width: 98%;
+        }
+     .mooveicon  {
+         left: 15px;
+     }   
+    #filtreanimaux {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        height: 35px;
+        width: 25%;
+        left: -267px;
+        padding-left: 50px;
+    }
+    #icondog {
+        right: 122px;
+        top: 0px;
+    }
+    #iconecoeur {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        height: 35px;
+        width: 105px;
+        left: -137px;
+        padding-left: 45px;
+    }
+    #iconcoeur {
+        left: -80px;
+    }
+     #filtrefamilial {
+         width: 12%;
+         left: -85px;
+         margin-left: 0px;
+     }
+     #iconefamilial {
+        left: -28px;
+    }
+}
 @media only screen and (width : 736px) {
     #container1 {
         width: 105%;
