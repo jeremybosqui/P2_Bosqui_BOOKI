@@ -1695,7 +1695,7 @@ input {
     }
   
 }
-@media (width : 412px) {
+@media only screen and (width : 412px) {
 #container1 {
     width: 90%;
 }
