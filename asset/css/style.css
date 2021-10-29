@@ -1561,23 +1561,11 @@ input {
     gap: 0px;
     margin: 20px;
 }
-
+}
 
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
 
-}
-@media only screen and (max-width: 414px) {
-    #iconecoeur {
-        left: -78px;    
-    }
-    
-    #filtrefamilial {
-        margin-left: -61.9px;
-    }
-    #container1 {
-        width: 90%;
-    }
-}
+
 @media only screen and (width : 425px) {
     #container1 {
         width: 88%;
@@ -1643,6 +1631,15 @@ input {
     #container1 {
         width: 100%;
     
+    }
+}
+@media only screen and (width : 412px) {
+    #container1 {
+        width: 90%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
     }
 }
 @media only screen and (width: 540px) {
