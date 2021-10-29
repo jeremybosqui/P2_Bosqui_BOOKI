@@ -1562,9 +1562,24 @@ input {
 }
 }
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
-@media (min-width: 400px) and (max-width: 410px) {
+@media (min-width: 400px) and (max-width: 405px) {
     #container1 {
-        width: 88%;
+        background: #0065FC;
+    }
+}
+@media (min-width: 406px) and (max-width: 410px) {
+    #container1 {
+        background: #b500fc;
+    }
+}
+@media (min-width: 411px) and (max-width: 416px) {
+    #container1 {
+        background: red;
+    }
+}
+@media (min-width: 417px) and (max-width: 421px) {
+    #container1 {
+        background: green;
     }
 }
 @media only screen and (width: 320px) {
