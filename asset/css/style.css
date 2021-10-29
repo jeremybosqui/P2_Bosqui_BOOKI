@@ -1561,15 +1561,23 @@ input {
     gap: 0px;
     margin: 20px;
 }
-
+/*================================================*/
+@media only screen and (width: 410px) {
+    #container1 {
+        width: 90%;
+    }
+}
+@media only screen and (width: 411px) {
+    #container1 {
+        width: 91%;
+    }
+}
 @media only screen and (width: 412px) {
-    #iconecoeur {
-        left: -78px;    
+    #container1 {
+        width: 89%;
     }
-    
-    #filtrefamilial {
-        margin-left: -61.9px;
-    }
+}
+@media only screen and (width: 413px) {
     #container1 {
         width: 90%;
     }
