@@ -1639,13 +1639,17 @@ input {
         left: -28px;
     }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (width: 375px) {
     #container1 {
         width: 100%;
     
     }
 }
-
+@media only screen and (width: 540px) {
+    #container1 {
+        width: 69%;
+    }
+}
 @media only screen and (width : 736px) {
     #container1 {
         width: 105%;
