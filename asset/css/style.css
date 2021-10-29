@@ -1582,6 +1582,11 @@ input {
         background: green;
     }
 }
+@media (min-width: 422px) and (max-width: 424px) {
+    #container1 {
+        background: black;
+    }
+}
 @media only screen and (width: 320px) {
 
     #container1 {
