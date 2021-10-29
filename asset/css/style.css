@@ -1640,12 +1640,6 @@ input {
         width: 85%;
     }
 }
-@media only screen and (width : 425px) {
-    #container1 {
-        width: 88%;
-    }
-}
-
 @media only screen and (width : 578px) {
     #iconcoeur {
         right: 466px;
@@ -1708,8 +1702,6 @@ input {
     
     }
 }
-
-
 @media only screen and (width: 540px) {
     #container1 {
         width: 69%;
