@@ -1575,6 +1575,7 @@ input {
 @media (min-width: 411px) and (max-width: 416px) {
     #container1 {
         background: red;
+        width: 90%;
     }
 }
 @media (min-width: 417px) and (max-width: 421px) {
