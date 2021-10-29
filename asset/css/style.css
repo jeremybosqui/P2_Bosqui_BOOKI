@@ -357,6 +357,7 @@ header {
 #enfant1 {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 25px;
     margin: 20px;
     background: #f2f2f2;
@@ -1561,4 +1562,77 @@ input {
     margin: 20px;
 }
 
+
+/*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
+
+}
+@media only screen and (width: 414px) {
+    #iconecoeur {
+        left: -78px;    
+    }
+    
+    #filtrefamilial {
+        margin-left: -61.9px;
+    }
+    #container1 {
+        width: 90%;
+    }
+}
+@media only screen and (width : 425px) {
+    #container1 {
+        width: 88%;
+    }
+}
+@media only screen and (width : 578px) {
+    #iconcoeur {
+        right: 466px;
+        top: 49px;
+        padding: 5px;    
+    }
+    #icondog {
+        top: 0px;
+        right: 20px;
+    }
+    #container1 {
+        width: 78%;
+    }    
+}
+@media only screen and (width : 736px) {
+    #container1 {
+        width: 105%;
+        }
+        
+    #filtreanimaux {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        height: 35px;
+        width: 20%;
+        left: -225px;
+        padding-left: 50px;
+    }
+    #icondog {
+        right: 688px;
+    }
+    #iconecoeur {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        height: 35px;
+        width: 105px;
+        left: -140px;
+        padding-left: 45px;
+    }
+    #iconcoeur {
+        left: -80px;
+    }
+     #filtrefamilial {
+         width: 12%;
+         left: -90px;
+         margin-left: 0px;
+     }
+     #iconefamilial {
+        left: -28px;
+    }
+  
 }
