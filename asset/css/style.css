@@ -1576,6 +1576,10 @@ input {
     #container1 {
         background: red;
         width: 90%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
     }
 }
 @media (min-width: 417px) and (max-width: 421px) {
