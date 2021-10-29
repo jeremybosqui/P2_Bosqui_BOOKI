@@ -1561,36 +1561,12 @@ input {
     gap: 0px;
     margin: 20px;
 }
-/*================================================*/
-@media only screen and (width: 410px) {
-    #container1 {
-        width: 90%;
-    }
-}
-@media only screen and (width: 411px) {
-    #container1 {
-        width: 91%;
-    }
-}
-@media only screen and (width: 412px) {
-    #container1 {
-        width: 89%;
-    }
-}
-@media only screen and (width: 413px) {
-    #container1 {
-        width: 90%;
-    }
-}
+
+
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
-@media only screen and (width : 360px) {
-    #container1 {
-        width: 104%;
-    }
+
 }
-/*===========================================*/
-}
-@media only screen and (width: 414px) {
+@media only screen and (max-width: 414px) {
     #iconecoeur {
         left: -78px;    
     }
@@ -1663,13 +1639,12 @@ input {
         left: -28px;
     }
 }
-@media  (min-width : 375px) and (max-width : 378px) {
+@media only screen and (width: 375px) {
     #container1 {
-        width: 99%;
+        width: 100%;
     
     }
 }
-
 @media only screen and (width: 540px) {
     #container1 {
         width: 69%;
