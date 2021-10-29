@@ -1554,7 +1554,6 @@ input {
     box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
 }
 /*====================== modification du footer  ==================================*/
-
 #final {
     display: inline-flex;
     flex-direction: column;
@@ -1562,7 +1561,6 @@ input {
     margin: 20px;
 }
 }
-
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
 @media only screen and (width : 578px) {
     #iconcoeur {
@@ -1576,6 +1574,7 @@ input {
     }
     #container1 {
         width: 78%;
+        background-color: blue;
     }    
 }
 @media  only screen and (width : 667px)   {
