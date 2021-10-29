@@ -1587,6 +1587,16 @@ input {
         background: black;
     }
 }
+@media (min-width: 376px) and (max-width: 399px) {
+    #container1 {
+       background: blueviolet;
+    }
+}
+@media (min-width: 426px) and (max-width: 430px) {
+    #container1 {
+       background: coral;
+    }
+}
 @media only screen and (width: 320px) {
 
     #container1 {
