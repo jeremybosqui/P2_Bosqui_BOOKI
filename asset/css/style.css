@@ -1564,13 +1564,6 @@ input {
 }
 
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
-
-
-@media only screen and (width : 425px) {
-    #container1 {
-        width: 88%;
-    }
-}
 @media only screen and (width : 578px) {
     #iconcoeur {
         right: 466px;
@@ -1627,99 +1620,4 @@ input {
         left: -28px;
     }
 }
-@media only screen and (width: 375px) {
-    #container1 {
-        width: 100%;
-    
-    }
-}
-@media only screen and (width : 414px) {
-    #container1 {
-        background-color: rgb(0, 255, 136);
-    }
-}
-@media only screen and (width : 412px) {
-    #container1 {
-        background-color: rgb(200, 255, 0);
-    }
-}
-@media only screen and (width : 413px) {
-    #container1 {
-        background-color: rgb(17, 0, 255);
-    }
-}
-@media only screen and (width : 411px) {
-    #container1 {
-        background-color: rgb(255, 0, 234);
-    }
-}
-@media only screen and (width : 410px) {
-    #container1 {
-        background-color: red;
-    }
-}
-@media only screen and (width : 415px) {
-    #container1 {
-        background-color: blueviolet;
-    }
-}
-@media only screen and (width : 416px) {
-    #container1 {
-        background-color:yellowgreen;
-    }
-}
-@media only screen and (width : 417px) {
-    #container1 {
-       background-color: black;
-    }
-}
-@media only screen and (width : 418px) {
-    #container1 {
-       background-color: rgb(225, 190, 96);
-    }
-}
 
-@media only screen and (width: 540px) {
-    #container1 {
-        width: 69%;
-    }
-}
-@media only screen and (width : 736px) {
-    #container1 {
-        width: 105%;
-        }
-        
-    #filtreanimaux {
-        border-radius: 50px;
-        border: 2px solid rgba(141, 139, 139, 0.459);
-        position: relative;
-        height: 35px;
-        width: 20%;
-        left: -225px;
-        padding-left: 50px;
-    }
-    #icondog {
-        right: 688px;
-    }
-    #iconecoeur {
-        border-radius: 50px;
-        border: 2px solid rgba(141, 139, 139, 0.459);
-        position: relative;
-        height: 35px;
-        width: 105px;
-        left: -140px;
-        padding-left: 45px;
-    }
-    #iconcoeur {
-        left: -80px;
-    }
-     #filtrefamilial {
-         width: 12%;
-         left: -90px;
-         margin-left: 0px;
-     }
-     #iconefamilial {
-        left: -28px;
-    }
-  
-}
