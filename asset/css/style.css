@@ -1562,6 +1562,11 @@ input {
 }
 }
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
+@media (min-width: 410px) and (max-width: 424px) {
+    #container1 {
+        display: none;
+    }
+}
 @media only screen and (width: 320px) {
 
     #container1 {
@@ -1669,27 +1674,6 @@ input {
     #container1 {
         width: 78%;
     }    
-}
-@media only screen and (width: 414px) {
-    #container1 {
-        width: 90%;
-        gap: 10px;
-        margin: 0px;
-        margin-top: 20px;
-        justify-content: space-evenly;
-
-        background-color: green;
-    }
-}
-@media only screen and (width: 412px) {
-    #container1 {
-        width: 89%;
-        gap: 10px;
-        background-color: red;
-        margin: 0px;
-        margin-top: 20px;
-        justify-content: space-evenly;
-    }
 }
 @media  only screen and (width : 667px)   {
     
