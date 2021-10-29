@@ -55,9 +55,11 @@ html {
  h1 {
     font-size: 20px;
     margin: 20px;
+    margin-left: 25px;
 }
 legend {
     margin: 20px;
+    margin-left: 25px;
 }
 /* ============= modification de la legend du h1 ========*/
 
@@ -106,6 +108,7 @@ input {
 /* agencement du header avec les élements de la nav côté droit du haut de la page juste en face du logo */
 header {
     display: flex;
+    margin-left: 20px;
     justify-content: space-between;
 }
 /*///// debut modification de la nav bar contenant les 2 a avec les ID relié à ceux-ci ///////////////*/
@@ -130,15 +133,17 @@ header {
 #container1{
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 15px;
 }
  /*================= modification du paragraphe avec l'icon i dans la partie info logement =================*/
  #paragrafeinfo {
     margin: 20px;
+    margin-left: 25px;
     display: flex;
+    margin-bottom: 35px;
 }
 #textinfo {
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 3px;
 }
 /* modification de la couleur des icons en bleu */
@@ -208,7 +213,8 @@ header {
 #firstfiltre {
     font-weight: bold;
     position: relative;
-    top: 9px;
+    top: 13px;
+    margin-left: 10px;
     margin-right: 20px;
 }
 /*/////////// modification du contenu de l'icon familial /////////////*/
@@ -281,7 +287,7 @@ header {
     margin-left: 15px;
 }
 #bigparent h2 {
-    margin-bottom: -10px;
+    margin-bottom: -25px;
     padding: 10px;
 }
 .tresgras {
@@ -790,13 +796,12 @@ footer {
     height: 35px;
     padding-left: 40px;
 }
-
-
-
-
-
-
-
+#firstfiltre {
+    font-weight: bold;
+    position: relative;
+    top: 13px;
+    margin-right: 20px;
+}
 
 }
 /*=======================  debut du responsive en version DESKTOP ==================================*/
@@ -808,6 +813,15 @@ footer {
     /*====== modification texte partie filtre =====*/
     #container1 {
         font-size: 14px;
+    }
+    header {
+        margin-left: 0px;
+    }
+    #firstfiltre {
+        font-weight: bold;
+        position: relative;
+        top: 13px;
+        margin-right: 20px;
     }
 /*===================================================   agencement des blocs des hebergements à marseille   =====================================*/
 #parent {
@@ -1069,6 +1083,7 @@ footer {
 /* agencement du header avec les élements de la nav côté droit du haut de la page juste en face du logo */
 header {
     display: block;
+    margin-left: 0px;
 }
 /*==================== marge sur le body ===================*/
 
@@ -1114,7 +1129,7 @@ header {
   /*===============  modification du h1  ===========*/
   h1 {
       font-size: 20px;
-      margin: 20px;
+      margin: 20px;  
   }
   /* ============= modification de la legend du h1 ========*/
   legend {
