@@ -1562,6 +1562,100 @@ input {
 }
 }
 /*=====================================================================         AJUSTEMENT DES ICONS DIFFERENTES TAILLE     =============================================================================================================================================*/
+@media only screen and (width: 320px) {
+
+    #container1 {
+        width: 100%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .mooveicon {
+        border-radius: 50px;
+        z-index: 100;
+        width: 30px;
+        position: relative;
+        font-size: 20px;
+        padding: 5px;
+        left: 11px;
+        background: #DEEBFF;
+    }
+    .iconfiltre {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: unset;
+        height: 35px;
+        position: relative;
+        left: -40px;
+        width: 100px;
+        padding-left: 38px;
+    }
+    #filtrefamilial {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        width: 20%;
+        height: 35px;
+        margin-left: -54.9px;
+        padding-left: 45px;
+    }
+    #iconecoeur {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        height: 35px;
+        width: 105px;
+        left: -70px;
+        padding-left: 45px;
+    }
+    #iconcoeur {
+        border-radius: 50px;
+        z-index: 100;
+        width: 30px;
+        position: relative;
+        font-size: 20px;
+        left: -4px;
+        padding: 5px;
+        background: #DEEBFF;
+    }
+    #icondog {
+        border-radius: 50px;
+        z-index: 100;
+        width: 30px;
+        position: relative;
+        font-size: 20px;
+        padding: 5px;
+        top: 49px;
+        right: 252px;
+        background: #DEEBFF;
+    }
+    #filtreanimaux {
+        border-radius: 50px;
+        border: 2px solid rgba(141, 139, 139, 0.459);
+        position: relative;
+        height: 35px;
+        width: 47%;
+        left: -26px;
+        padding-left: 40px;
+    }
+    }
+
+@media only screen and (width: 375px) {
+    #container1 {
+        width: 100%;
+    
+    }
+}
+@media only screen and (width: 425px) {
+    #container1 {
+        width: 88%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
 @media only screen and (width : 578px) {
     #iconcoeur {
         right: 466px;
