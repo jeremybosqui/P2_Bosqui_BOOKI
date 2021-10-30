@@ -612,7 +612,6 @@ footer {
   margin: 25px;
 }
 
-
 /*===============================================================================   debut de l'agencement du site en version TABLETTE ET MOBILE    ======================================================================================*/
 /*=========================   debut du media screen version TABLETTE =========================*/
 @media (min-width : 768px) and (max-width : 991px) {
@@ -1623,7 +1622,7 @@ input {
 /*=================================================*/
 @media (min-width: 411px) and (max-width: 416px) {
     #container1 {
-        width: 90%;
+        width: 90.4%;
         gap: 10px;
         margin: 0px;
         margin-top: 20px;
@@ -1814,4 +1813,51 @@ input {
         left: -28px;
     }
 }
-
+/*===============================================*/
+@media only screen and (width: 540px) {
+    #container1 {
+    width: 69.4%;
+    gap: 10px;
+    margin: 0px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+}
+/*==============================================*/
+@media only screen and (width: 720px) {
+    #container1 {
+        width: 52%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
+/*====================================================*/
+@media only screen and (width: 360px) {
+    #container1 {
+        width: 104%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (width:428px) {
+    #container1 {
+        width: 87.4%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (width: 390px) {
+    #container1 {
+        width: 96%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
