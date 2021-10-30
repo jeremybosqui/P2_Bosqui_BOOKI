@@ -478,9 +478,9 @@ header {
 #premierblocactivites {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    justify-content: space-evenly;
-    gap: 65px;
+    gap: 30px;
 }
 #premierblocactivites a {
     text-decoration: none;
@@ -488,7 +488,7 @@ header {
 }
 /* ============ modification du titre activites =====================*/
 #titreactivites {
-    margin: 20px;
+    margin: 5px;
 }
 /* agencement du dernier bloc contenant le reste des images */
 #finalimg1 {
@@ -617,6 +617,13 @@ footer {
 /*=========================   debut du media screen version TABLETTE =========================*/
 @media (min-width : 768px) and (max-width : 991px) {
     /*==================== modificaiton des textes en responsive     =================*/
+    .dot i {
+        color: #0065FC;
+        position: relative;
+        top: 2.5px;
+        left: 8px;
+        font-size: 12px;
+    }
     body {
         font-size: 12px;
     }
@@ -810,6 +817,13 @@ footer {
     body {
         font-size: 11px;
     }
+    .dot i {
+        color: #0065FC;
+        position: relative;
+        top: 2.5px;
+        left: 8px;
+        font-size: 12px;
+    }
     /*====== modification texte partie filtre =====*/
     #container1 {
         font-size: 14px;
@@ -822,6 +836,15 @@ footer {
         position: relative;
         top: 13px;
         margin-right: 20px;
+    }
+    /*==========================   modification texte partie activites  =================================*/
+    #titreactivites {
+        margin-bottom: -5px;
+        margin: 5px;
+    }
+    #parentactivites {
+        margin: 20px;
+        margin-top: -35px;
     }
 /*===================================================   agencement des blocs des hebergements à marseille   =====================================*/
 #parent {
@@ -1521,6 +1544,7 @@ input {
 #parentactivites {
     margin: 20px;
     margin-top: 30px;
+
 }
 #premierblocactivites {
     display: inline-flex;
