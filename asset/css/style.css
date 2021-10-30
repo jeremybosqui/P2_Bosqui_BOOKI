@@ -1879,3 +1879,13 @@ input {
         justify-content: space-evenly;
     }
 }
+@media (min-width: 422px) and (max-width: 425px) {
+    #container1 {
+        width: 88%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
+
