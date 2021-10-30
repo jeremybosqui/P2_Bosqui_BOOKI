@@ -1861,7 +1861,16 @@ input {
         justify-content: space-evenly;
     }
 }
-@media (min-width: 415px) and (max-width: 416px) {
+@media (min-width: 422px) and (max-width: 424px) {
+       #container1 {
+        width: 96%;
+        gap: 10px;
+        margin: 0px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 415px) and (max-width: 416px){
     #container1 {
         width: 89.4%;
         gap: 10px;
@@ -1869,6 +1878,4 @@ input {
         margin-top: 20px;
         justify-content: space-evenly;
     }
-}
-@media (min-width: 422px) and (max-width: 424px)
 }
