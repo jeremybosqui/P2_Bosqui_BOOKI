@@ -138,6 +138,7 @@ header {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 15px;
+    margin-left: 25px;
 }
  /*================= modification du paragraphe avec l'icon i dans la partie info logement =================*/
  #paragrafeinfo {
@@ -160,7 +161,7 @@ header {
     width: 30px;
     height: 30px;
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     padding: 7.5px;
     background: rgb(222, 235, 255);
 }
@@ -168,8 +169,8 @@ header {
 /*==================================*/
 .mooveicon i {
     position: relative;
-    bottom: -3px;
-    left: 2px;
+    bottom: -5px;
+    left: 4.5px;
 }
 .iconfiltre {
     border-radius: 50px;
@@ -189,9 +190,8 @@ header {
 /*/////////// modification de l'icon familial pour qu'elle soit aligné //////////*/
 #iconefamilial i {
      position: relative;
-    bottom: -4px;
-    left: 7px;
-    
+     bottom: -7px;
+     left: 8.5px;
 }
 #iconefamilial {
     border-radius: 50px;
@@ -199,7 +199,7 @@ header {
     height: 30px;
     width: 30px;
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     padding: 7.5px;
     background: #DEEBFF;
 }
@@ -230,8 +230,8 @@ header {
 /*/////////// modification de l'icon coeur pour qu'elle soit aligné //////////*/
 #iconcoeur i {
     position: relative;
-   bottom: -5px;
-   left: 5px;
+    bottom: -7px;
+    left: 7px;
 }
 #iconcoeur {
     height: 30px;
@@ -239,7 +239,7 @@ header {
    z-index: 100;
    width: 30px;
    position: relative;
-   font-size: 20px;
+   font-size: 17px;
    padding: 7.5px;
    background: #DEEBFF;
 }
@@ -280,15 +280,15 @@ header {
     z-index: 100;
     width: 30px;
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     padding: 7.5px;
     height: 30px;
     background: #DEEBFF;
 }
 #icondog i {
     position: relative;
-    left: 5px;
-    top: 3px;
+    left: 6px;
+    top: 5px;
 }
 /* modification des paragraphe contenant le text dans le container1 ////////////////*/
 .parafiltre {
@@ -412,7 +412,7 @@ header {
     background: white;
     border: 5px solid white;
     border-radius: 20px;
-    margin: 25px;
+    margin: 20px;
     height: 130px;
     box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
 }
@@ -492,6 +492,14 @@ header {
 #parentactivites {
     margin: 20px;
 }
+#PremierBlocActivites {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+/*===================================*/
 #premierblocactivites {
     display: inline-flex;
     flex-wrap: wrap;
@@ -1281,7 +1289,7 @@ input {
     position: relative;
     left: -85px;
     width: 110px;
-    padding-left: 45px;
+    padding-left: 50px;
 }
 .mooveicon {
     left: -85px;
@@ -1296,7 +1304,7 @@ input {
     width: 110px;
     bottom: 85px;
     left: -85px;
-    padding-left: 45px;
+    padding-left: 50px;
     margin-top: -35px;
 }
 #iconcoeur {
@@ -1621,13 +1629,20 @@ input {
 /*==========================================================================================================================================================*/
 /*===============   modification partie filtre   ===========================*/
 
-@media screen and (min-width : 807px) {
+@media (min-width : 807px) and (max-width: 816px) {
 
     #filtreanimaux {
-        left: -45px;
-        top: 0px;
+    left: 560px;
+    top: -45px;
     }
 }
+@media (min-width: 817px) and (max-width: 991px) {
+    #filtreanimaux {
+        left: -40px;
+        top: 0px;
+        }
+}
+
 /*============================*/
  @media screen and (min-width : 992px) {
      #filtreanimaux {
