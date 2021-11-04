@@ -653,6 +653,18 @@ footer {
     #paragrafehebergement {
         margin-top: 10px;
     }
+    /*==========================================*/
+    #filtremobile {
+        font-weight: 900;
+        position: relative;
+        top: 5px;
+        margin-right: 30px;
+    }
+    .parafiltre {
+        position: relative;
+        top: 11px;
+        font-weight: 900;
+    }
 /*========================  modification des images    du premier bloc des 9 images en flex column reverse =========================================*/
 /*============== modification des 3 premieres images =========================*/
 #enft7  {
@@ -787,10 +799,11 @@ footer {
     border-radius: 50px;
     border: 2px solid rgba(141, 139, 139, 0.459);
     position: relative;
-    left: -35px;
+    left: 560px;
+    top: -45px;
     width: 115px;
     height: 35px;
-    padding-left: 40px;
+    padding-left: 50px;
 }
 #iconecoeur {
     border-radius: 50px;
