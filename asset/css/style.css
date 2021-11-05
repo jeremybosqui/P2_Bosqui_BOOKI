@@ -61,7 +61,7 @@ html {
     margin: 20px;
     margin-left: 25px;
 }
-legend {
+#legend {
     margin: 20px;
     margin-left: 25px;
 }
@@ -1191,7 +1191,7 @@ input {
       margin-left: 25px;
   }
   /* ============= modification de la legend du h1 ========*/
-  legend {
+  #legend {
       margin: 20px;
       margin-left: 28px;
   }
