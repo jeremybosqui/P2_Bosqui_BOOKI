@@ -648,6 +648,10 @@ footer {
     br {
         display: none;
     }
+    #bigparent2 h2 {
+        margin-left: 5px;
+    }
+    /*===================================*/
     .dot i {
         color: #0065FC;
         position: relative;
@@ -977,6 +981,7 @@ footer {
 #bigparent2 h2 {
     font-size: 15px;
     margin-bottom: 5px;
+    margin-left: 3px;
 }
 #graphicicon {
     margin-left: 30px;
@@ -1394,6 +1399,7 @@ input {
     margin-bottom: -10px;
     padding: unset;
     padding-bottom: 10px;
+    margin-left: 20px;
 }
 .nongras2 {
     margin-right: auto;
