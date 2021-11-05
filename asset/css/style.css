@@ -920,7 +920,7 @@ footer {
     box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
 }
 /*=============================== modification de la taille des textes ====================*/
-#paragrafehebergement {
+.paragrafehebergement {
     margin-top: 0px;
 }
 .tresgras2 {
