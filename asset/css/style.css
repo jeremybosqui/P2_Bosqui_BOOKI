@@ -319,10 +319,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
-/*/////////// modification des textes en  pour le premier bloc d'images des hebergements ////////////*/
-#paragrafehebergement {
-    margin-top: -10px;
-}
+
 .nongras {
     margin-left: 12px;
     margin-top: -10px;
@@ -330,12 +327,10 @@ header {
 }
 /*///////// modification des textes l'autre bloc contenant les 3 blocs d'images sur la droite ///////*/
 .nongras2 {
-    margin-left: 160px;
     margin-bottom: 30px;
 }
 .tresgras2 {
     font-weight: bold;
-    margin-left: 160px;
     margin-bottom: -10px;
 }
 /* modification de l'icon graphic contenu dans le titre les plus populaires /////////*/
@@ -371,6 +366,12 @@ header {
     font-size: 13px;
     margin-left: 12px;
 }
+/*========================================  icon blue bloc les plus populaires ==============*/
+.blue2 {
+    color: #0065FC;
+    font-size: 13px;
+    margin-left: 0px;
+}
 /* modification de la couleur en gris pour les etoiles en gris dans le blocs des hebergements */
 .gris {
     color: #b4b2b2;
@@ -405,7 +406,7 @@ header {
     background: white;
     border: 5px solid white;
     border-radius: 20px;
-    height: 200px;
+    height: 205px;
     box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
 } 
 .secondbloc {
@@ -468,6 +469,7 @@ header {
     background-size: cover;
     width: 150px;
     height: 130px;
+    margin-right: 20px;
     float: left;
     border-radius: 15px 0px 0px 15px;
 }
@@ -476,6 +478,7 @@ header {
     background-size: cover;
     width: 150px;
     height: 130px;
+    margin-right: 20px;
     float: left;
     border-radius: 15px 0px 0px 15px;
 }
@@ -484,6 +487,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 150px;
+    margin-right: 20px;
     height: 130px;
     float: left;
     border-radius: 15px 0px 0px 15px;
@@ -641,6 +645,9 @@ footer {
 /*=========================   debut du media screen version TABLETTE =========================*/
 @media (min-width : 768px) and (max-width : 991px) {
     /*==================== modificaiton des textes en responsive     =================*/
+    br {
+        display: none;
+    }
     .dot i {
         color: #0065FC;
         position: relative;
@@ -658,8 +665,26 @@ footer {
         margin: 20px;
         margin-left: 35px;
     }
-    #paragrafehebergement {
-        margin-top: 10px;
+    .paragrafehebergement {
+        margin-top: 20px;
+    }
+    /*================================================*/
+    .nongras {
+        margin-left: 12px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+    .tresgras {
+        font-weight: bold;
+        margin-left: 12px;
+        margin-bottom: 15px;
+    }
+    .nongras2 {
+        margin-bottom: 75px;
+    }
+    .tresgras2 {
+        font-weight: bold;
+        margin-bottom: 30px;
     }
     /*==========================================*/
     #filtremobile {
@@ -680,7 +705,7 @@ footer {
     background-size: cover;
     width: 45%;
     max-width: 50%;
-    height: 130px;
+    height: 160px;
     float: left;
     margin-right: 10px;
     border-radius: 15px 0px 0px 15px;
@@ -690,7 +715,7 @@ footer {
     background-size: cover;
     width: 45%;
     max-width: 50%;
-    height: 130px;
+    height: 160px;
     margin-right: 10px;
     float: left;
     border-radius: 15px 0px 0px 15px;
@@ -702,7 +727,7 @@ footer {
     width: 45%;
     margin-right: 10px;
     max-width: 50%;
-    height: 130px;
+    height: 160px;
     float: left;
     border-radius: 15px 0px 0px 15px;
 }
@@ -776,7 +801,8 @@ footer {
     background: white;
     border: 5px solid white;
     border-radius: 20px;
-    margin: 18px;
+    margin: 10px;
+    height: 160px;
     box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.275);
 }
 #enfant1 {
@@ -794,13 +820,29 @@ footer {
 #premierblocactivites {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    justify-content: space-evenly;
-    gap: 65px;
+    gap: 15px;
+    margin: 25px;
+}
+#PremierBlocActivites {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0px;
+}
+#parentactivites {
+    margin: 20px;
+    background: #f2f2f2;
+    border-radius: 15px 15px 15px 15px;
 }
 /*==============================  modification du footer  ========================================*/
 #final {
     gap: 100px;
+}
+footer {
+    background: white;
 }
 /*============================ modification des filtres =====================================*/
 #filtreanimaux {
@@ -898,7 +940,7 @@ footer {
 }
 #bigparent2 {
     background: #f2f2f2;
-    width: 25%;
+    width: 26%;
     height: 515px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -930,7 +972,7 @@ footer {
 .nongras2 {
     font-size: 11px;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 #bigparent2 h2 {
     font-size: 15px;
@@ -995,6 +1037,7 @@ footer {
     width: 42%;
     height: 100px;
     float: left;
+    margin-right: 10px;
     border-radius: 15px 0px 0px 15px;
 }
 #enft8  {
@@ -1004,6 +1047,7 @@ footer {
     width: 42%;
     height: 100px;
     float: left;
+    margin-right: 10px;
     border-radius: 15px 0px 0px 15px;
 }
 #enft9  {
@@ -1012,6 +1056,7 @@ footer {
     background-position: center;
     width: 42%;
     height: 100px;
+    margin-right: 10px;
     float: left;
     border-radius: 15px 0px 0px 15px;
 }
