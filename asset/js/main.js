@@ -1,4 +1,5 @@
 'use strict'
+
 let scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 let rootElement = document.documentElement;
 
