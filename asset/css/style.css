@@ -710,9 +710,7 @@ footer {
     width: 45%;
     max-width: 50%;
     height: 160px;
-    float: left;
     margin-right: 10px;
-    border-radius: 15px 0px 0px 15px;
 }
 #enft8  {
     background: url(../img/3_medium/8eme.jpg);
@@ -721,8 +719,7 @@ footer {
     max-width: 50%;
     height: 160px;
     margin-right: 10px;
-    float: left;
-    border-radius: 15px 0px 0px 15px;
+    
 }
 #enft9  {
     background: url(../img/3_medium/9eme.jpg);
@@ -732,29 +729,28 @@ footer {
     margin-right: 10px;
     max-width: 50%;
     height: 160px;
-    float: left;
-    border-radius: 15px 0px 0px 15px;
+    
 }
 #enft1  {
     background: url(../img/3_medium/1ere.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 #enft2  {
     background: url(../img/3_medium/2eme.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 #enft3  {
     background: url(../img/3_medium/3eme.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 #enft4  {
     background: url(../img/3_medium/4eme.jpg);
@@ -762,30 +758,26 @@ footer {
     background-position: center;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 #enft5  {
     background: url(../img/3_medium/5eme.jpg);
-    background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 #enft6  {
     background: url(../img/3_medium/6eme.jpg);
-    background-size: cover;
     background-position: center;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 
 /*====================== modification des blocs contenant les 9 images des hebergements ========================*/
 
 #parent {
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
     margin: unset;
     margin-bottom: 1685px;
 }
@@ -796,7 +788,6 @@ footer {
     height: 0px;
 }
 #bigparent2 {
-    background: #f2f2f2;
     width: 100%;
     height: 100%;
     border-radius: unset;
@@ -822,17 +813,11 @@ footer {
 }
 /*======================  modification du dernier bloc sur les activités ============================*/
 #premierblocactivites {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
     gap: 15px;
     margin: 25px;
 }
 #PremierBlocActivites {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
     gap: 0px;
 }
@@ -931,22 +916,16 @@ footer {
     }
 /*===================================================   agencement des blocs des hebergements à marseille   =====================================*/
 #parent {
-    display: flex;
-    justify-content: space-between;
     height: 555px;
     margin: 20px;
 }
 #bigparent {
-    background: #f2f2f2;
     width: 72%;
-    border-radius: 15px 15px 15px 15px;
     height: 515px;
 }
 #bigparent2 {
-    background: #f2f2f2;
     width: 26%;
     height: 515px;
-    border-radius: 15px 15px 15px 15px;
 }
 .firstbloc {
     height: 175px;
@@ -995,45 +974,45 @@ footer {
     background: url(../img/3_medium/1ere.jpg);
     background-size: cover;
     width: auto;
-    height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
+  
 }
 #enft2  {
     background: url(../img/3_medium/2eme.jpg);
     background-size: cover;
     width: auto;
-    height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
+   
 }
 #enft3  {
     background: url(../img/3_medium/3eme.jpg);
     background-size: cover;
     width: auto;
-    height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
+    
 }
 #enft4  {
     background: url(../img/3_medium/4eme.jpg);
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 125px;
-    border-radius: 15px 15px 0px 0px;
+
+  
 }
 #enft5  {
     background: url(../img/3_medium/5eme.jpg);
     background-size: cover;
     width: auto;
-    height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
+  
 }
 #enft6  {
     background: url(../img/3_medium/6eme.jpg);
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 125px;
-    border-radius: 15px 15px 0px 0px;
+
+   
 }
 #enft7  {
     background: url(../img/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
@@ -1041,9 +1020,8 @@ footer {
     background-position: top;
     width: 42%;
     height: 100px;
-    float: left;
     margin-right: 10px;
-    border-radius: 15px 0px 0px 15px;
+    
 }
 #enft8  {
     background: url(../img/3_medium/8eme.jpg);
@@ -1051,9 +1029,8 @@ footer {
     background-position: center;
     width: 42%;
     height: 100px;
-    float: left;
     margin-right: 10px;
-    border-radius: 15px 0px 0px 15px;
+  
 }
 #enft9  {
     background: url(../img/3_medium/9eme.jpg);
@@ -1062,19 +1039,15 @@ footer {
     width: 42%;
     height: 100px;
     margin-right: 10px;
-    float: left;
-    border-radius: 15px 0px 0px 15px;
+   
 }
 /*=====================================  modification du dernier bloc contenant les autres images ====================================*/
 #premierblocactivites {
-    display: inline-flex;
-    flex-wrap: wrap;
     width: 100%;
     gap: 30px;
 }
 #premiereimg {
     background: white;
-    border-radius: 15px 15px 15px 15px;
     height: 313px;
     width: 215px;
     box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
@@ -1082,7 +1055,6 @@ footer {
 
 #deuxiemeimg {
     background: white;
-    border-radius: 15px 15px 15px 15px;
     margin-bottom: 40px;
     height: 152px;
     width: 215px;
@@ -1091,21 +1063,18 @@ footer {
 
 #troisiemeimg {
     background: white;
-    border-radius: 15px 15px 15px 15px;
     height: 120px;
     width: 215px;
     box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
 }
 #quatriemeimg {
     background: white;
-    border-radius: 15px 15px 15px 15px;
     height: 313px;
     width: 215px;
     box-shadow: 1px 1px 12px rgb(85 85 85 / 28%);
 }
 #cinquiemeimg {
     background: white;
-    border-radius: 15px 15px 15px 15px;
     height: 120px;
     width: 215px;
     margin-bottom: 40px;
@@ -1113,7 +1082,6 @@ footer {
 }
 #sixiemeimg {
     background: white;
-    border-radius: 15px 15px 15px 15px;
     margin-bottom: 40px;
     height: 152px;
     width: 215px;
@@ -1123,11 +1091,10 @@ footer {
 #finalimg1 {
     background: url(../img/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
-    background-position: bottom;
     width: 100%;
     height: 277px;
     max-height: 397px;
-    border-radius: 15px 15px 0px 0px;
+
 }
 
 #finalimg2 {
@@ -1137,7 +1104,7 @@ footer {
     width: 100%;
     height: 120px;
     max-height: 140px;
-    border-radius: 15px 15px 0px 0px;
+
 }
 #finalimg3 {
     background: url(../img/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
@@ -1146,7 +1113,6 @@ footer {
     width: 100%;
     height: 85px;
     max-height: 140px;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg4 {
     background: url(../img/activités/4eme.jpg);
@@ -1155,8 +1121,6 @@ footer {
     width: 100%;
     height: 277px;
     max-height: 397px;
-    border-radius: 15px 15px 0px 0px;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg5 {
     background: url(../img/activités/5eme.jpg);
@@ -1165,7 +1129,6 @@ footer {
     width: 100%;
     height: 85px;
     max-height: 140px;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg6 {
     background: url(../img/activités/6eme.jpg);
@@ -1174,7 +1137,6 @@ footer {
     width: 100%;
     height: 120px;
     max-height: 140px;
-    border-radius: 15px 15px 0px 0px;
 }
 /*===========================   modification du bloc mentions legal contenu dans le footer  ========================*/
 #final {
@@ -1206,7 +1168,7 @@ input {
 }
 /*=================================================================*/
 #filtremobile {
-    font-weight: 900; 
+    
     margin-bottom: -20px;
     margin-left: -85px;
 }
@@ -1234,15 +1196,9 @@ input {
     border-bottom: 2px solid #0065FC ;
     color: #0065FC;
   }
-  /*===============  modification du h1  ===========*/
-  h1 {
-      font-size: 20px;
-      margin: 20px;  
-      margin-left: 25px;
-  }
+ 
   /* ============= modification de la legend du h1 ========*/
   #legend {
-      margin: 20px;
       margin-left: 28px;
   }
 
@@ -1421,9 +1377,8 @@ input {
     width: 45%;
     max-width: 50%;
     height: 130px;
-    float: left;
     margin-right: 10px;
-    border-radius: 15px 0px 0px 15px;
+
 }
 #enft8  {
     background: url(../img/3_medium/8eme.jpg);
@@ -1432,8 +1387,7 @@ input {
     max-width: 50%;
     height: 130px;
     margin-right: 10px;
-    float: left;
-    border-radius: 15px 0px 0px 15px;
+ 
 }
 #enft9  {
     background: url(../img/3_medium/9eme.jpg);
@@ -1443,29 +1397,28 @@ input {
     margin-right: 10px;
     max-width: 50%;
     height: 130px;
-    float: left;
-    border-radius: 15px 0px 0px 15px;
+   
 }
 #enft1  {
     background: url(../img/3_medium/1ere.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+   
 }
 #enft2  {
     background: url(../img/3_medium/2eme.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+   
 }
 #enft3  {
     background: url(../img/3_medium/3eme.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+    
 }
 #enft4  {
     background: url(../img/3_medium/4eme.jpg);
@@ -1473,14 +1426,14 @@ input {
     background-position: center;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+
 }
 #enft5  {
     background: url(../img/3_medium/5eme.jpg);
     background-size: cover;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+   
 }
 #enft6  {
     background: url(../img/3_medium/6eme.jpg);
@@ -1488,26 +1441,23 @@ input {
     background-position: center;
     width: 100%;
     height: 125px;
-    border-radius: 15px 15px 0px 0px;
+   
 }
 
 /*====================== modification des blocs contenant les 9 images des hebergements ========================*/
 
 #parent {
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
     margin: unset;
     margin-bottom: 1560px;
 }
 #bigparent {
     background: white;
     width: 100%;
-    border-radius: 15px 15px 15px 15px;
     height: 125px;
 }
 #bigparent2 {
-    background: #f2f2f2;
+    
     width: 100%;
     height: 100%;
     border-radius: unset;
@@ -1565,57 +1515,46 @@ input {
 /*============= modification des images ================*/
 #finalimg1 {
     background: url(../img/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    background-size: cover;
     background-position: top;
     width: 100%;
     height: 75%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg2 {
     background: url(../img/activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    background-size: cover;
     background-position: center;
     width: 100%;
     height: 75%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg3 {
     background: url(../img/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    background-size: cover;
     background-position: top;
     width: 100%;
     height: 75%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
+ 
 }
 #finalimg4 {
     background: url(../img/activités/4eme.jpg);
-    background-size: cover;
     background-position: bottom;
     width: 100%;
     height: 75%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg5 {
     background: url(../img/activités/5eme.jpg);
-    background-size: cover;
     background-position: bottom;
     width: 100%;
     height: 75%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
 }
 #finalimg6 {
     background: url(../img/activités/6eme.jpg);
-    background-size: cover;
     background-position: center;
     width: 100%;
     height: 75%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
 }
 /*=================== modification du bloc contenant les 6 images des activités ============================================*/
 #parentactivites {
